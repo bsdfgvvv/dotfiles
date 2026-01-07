@@ -76,3 +76,4 @@ if [ -f /usr/share/fzf/completion.bash ]; then
 fi
 
 export EDITOR='kate'
+alias rice-sync='cd ~/RiceBackup && git add . && git commit -m "Update rice: $(date +%Y-%m-%d_%H:%M)" && git push && cd -'
