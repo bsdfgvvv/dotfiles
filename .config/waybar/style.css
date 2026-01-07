@@ -1,0 +1,99 @@
+* {
+border: none;
+border-radius: 0;
+font-family: "JetBrainsMono Nerd Font";
+font-weight: bold;
+font-size: 14px;
+min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.5); /* Semi-transparent background */
+    color: #cdd6f4;
+}
+
+#workspaces button {
+padding: 0 5px;
+background: transparent;
+color: #cdd6f4;
+}
+
+#workspaces button.active {
+color: #89b4fa; /* Blue for active */
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#custom-launcher,
+#custom-notification {
+padding: 0 10px;
+color: #cdd6f4;
+background: #1e1e2e; /* Darker background for modules */
+border-radius: 10px;
+margin: 6px 3px;
+}
+
+#custom-launcher {
+background-color: #89b4fa;
+color: #1e1e2e;
+border-radius: 10px;
+margin-left: 10px;
+margin-right: 10px;
+padding: 0 10px 0 5px;
+}
+
+#clock {
+background-color: #1e1e2e;
+color: #cba6f7;
+}
+
+#custom-notification {
+background-color: #1e1e2e;
+color: #f9e2af;
+margin-right: 10px;
+}
+
+#taskbar button {
+padding: 0 5px;
+margin: 0 2px;
+border-radius: 10px;
+background-color: #1e1e2e;
+color: #cdd6f4;
+}
+#taskbar button.active {
+background-color: #89b4fa;
+color: #1e1e2e;
+}
+
+
+/* Bottom Bar Specifics */
+#cpu, #memory, #temperature, #disk {
+color: #a6e3a1;
+background: #1e1e2e;
+padding: 0 10px;
+margin: 4px;
+border-radius: 10px;
+}
+#cpu { color: #f38ba8; } /* Red */
+#memory { color: #fab387; } /* Orange */
+#temperature { color: #89b4fa; } /* Blue */
+
+#custom-gpu {
+background-color: #1e1e2e;
+color: #cba6f7; /* Purple for GPU */
+padding: 0 10px;
+margin: 6px 3px;
+border-radius: 10px;
+}

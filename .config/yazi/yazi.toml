@@ -1,0 +1,15 @@
+[flavor]
+use = "mocha"
+
+[opener]
+edit = [
+    { run = 'kate "$@"', block = false, desc = "Edit with Kate" }
+]
+
+[open]
+rules = [
+    { name = "*.txt", use = "edit" },
+    { name = "*.conf", use = "edit" },
+    { name = "*.toml", use = "edit" },
+    { name = "*.lua", use = "edit" }
+]
